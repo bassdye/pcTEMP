@@ -1,0 +1,6 @@
+"0","non_gradient <- df_list[grepl(""NG"", names(df_list))]"
+"0","acute <- df_list[grepl(""A"", names(df_list))]"
+"0","final <- df_list[grepl(""F"", names(df_list))]"
+"0",""
+"0","# Clear space in environment"
+"0","rm(df_list)"

@@ -1,0 +1,4 @@
+"0","prop_dat$LRA1 <- prop_dat$LR1 - log(0.5); # 0.5 = (1/8)/(1/4)"
+"0","prop_dat$LRA2 <- prop_dat$LR2 - log(1); # 1 = (1/4)/(1/4)"
+"0","prop_dat$LRA3 <- prop_dat$LR3 - log(1); # 1 = (1/4)/(1/4)"
+"0","prop_dat$LRA4 <- prop_dat$LR4 - log(0.5); # 0.5 = (1/8)/(1/4)"
