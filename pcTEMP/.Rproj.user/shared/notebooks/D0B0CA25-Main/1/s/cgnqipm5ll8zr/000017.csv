@@ -1,3 +1,0 @@
-"0",""
-"0","# Clean up environment"
-"0","rm(list=setdiff(ls(), c(""prop_dat"", ""number_treatments"", ""temp_range"")))"

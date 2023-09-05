@@ -1,5 +1,0 @@
-"0","# Take the compartment C3 (21*C temperature compartment) as the denominator"
-"0","prop_dat$LR1 <- log(prop_dat$C1/prop_dat$C3);"
-"0","prop_dat$LR2 <- log(prop_dat$C2/prop_dat$C3);"
-"0","prop_dat$LR3 <- log(prop_dat$C4/prop_dat$C3);"
-"0","prop_dat$LR4 <- log(prop_dat$C5/prop_dat$C3);"
