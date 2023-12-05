@@ -214,9 +214,14 @@ tmp_dat <- combined_dat %>%
              phase = c(rep("I", time = length(non_gradient_separate)), rep("II", time = length(acute_separate)), rep("III", time = length(final_separate))),
              .before = colnames(non_grad_dat[1])) 
 
-if(exists("number_treatments")) {
+if(exists("number_treatments") & number_groups > 2) {
   tmp_dat <- tmp_dat %>% 
-    add_column(treatment = rep(treatments, times = nrow(non_grad_dat) / number_treatments * number_phases), .after = "phase") # Add treatments column; times = # experiments / # treatments * 3 phases
+    add_column(treatment = rep(treatments, each = number_groups, times = number_phases), .after = "phase") # Add treatments column; times = # experiments / # treatments * 3 phases
+  rownames(tmp_dat) <- NULL # Remove row names
+  colnames(tmp_dat)[c(4:11)] <- c("z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8")
+} else if (exists("number_treatments") & number_groups == 2) {
+  tmp_dat <- tmp_dat %>% 
+  add_column(treatment = rep(treatments, times = nrow(non_grad_dat) / number_treatments * number_phases), .after = "phase")
   rownames(tmp_dat) <- NULL # Remove row names
   colnames(tmp_dat)[c(4:11)] <- c("z1", "z2", "z3", "z4", "z5", "z6", "z7", "z8")
 } else {

@@ -1,4 +1,0 @@
-"0","combined_rows <- function(input_list) {"
-"0","  test <- bind_rows(input_list) %>%"
-"0","    summarise_all(~ sum(., na.rm = TRUE))"
-"0","}"
