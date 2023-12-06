@@ -302,7 +302,7 @@ acute_count <- combined_rows(acute_separate)
 final_count <- combined_rows(final_separate)
 
 # Calculate total missing counts (i.e. Ethovision tracking error)
-if(exists("number_treatments")) {
+if(exists("number_treatments" & number_groups == 2)) {
   for(i in 1:length(treatments)) {
   non_gradient_treatment_count <- combined_rows(non_gradient_separate[str_detect(names(non_gradient_separate), treatments[i])])
   non_gradient_treatment_total_count <- sum(non_gradient_treatment_count[,zones_1_8])
