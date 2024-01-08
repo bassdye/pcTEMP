@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: pcTEMP
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: 'Bass '
+    family-names: Dye
+    email: bass.d.dye@gmail.com
+    orcid: 'https://orcid.org/0000-0001-9745-353X'
+    affiliation: Royal Netherlands Institute for Sea Research
+repository-code: 'https://github.com/bassdye/pcTEMP'
+abstract: >-
+  The following R script provides the steps to statistically
+  analyze the compartmental usage of an organism within the
+  water temperature preference chamber following methods in
+  Aebischer et al. (1993) and Schram et al. (2013). This
+  script is geared towards analyzing the data obtained from
+  the Ethovision fish tracking software but can be adapted
+  for manual counts (e.g., Schram et al. 2013; Dye et al.
+  2023).
+license: MIT
+date-released: '2023-09-05'
+url: "https://github.com/bassdye/pcTEMP"
